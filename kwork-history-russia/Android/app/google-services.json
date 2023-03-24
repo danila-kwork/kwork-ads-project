@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "525149773437",
+    "firebase_url": "https://mad-two-history-project-default-rtdb.firebaseio.com",
+    "project_id": "mad-two-history-project",
+    "storage_bucket": "mad-two-history-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525149773437:android:96e76a1425a602ffd29b14",
+        "android_client_info": {
+          "package_name": "com.MadJon.PINPNG"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATbpI48pUufGekgTrZnPpsGQ0BPO42ZEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525149773437:android:8475a0e94c4f852bd29b14",
+        "android_client_info": {
+          "package_name": "ru.madtwoproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATbpI48pUufGekgTrZnPpsGQ0BPO42ZEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525149773437:android:60d945e607aaa014d29b14",
+        "android_client_info": {
+          "package_name": "ru.madtwoproject1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATbpI48pUufGekgTrZnPpsGQ0BPO42ZEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525149773437-ubd910ss0h6dqrecg2e9tm4c491c4i2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
