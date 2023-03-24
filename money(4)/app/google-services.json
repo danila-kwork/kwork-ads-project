@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706923099136",
+    "project_id": "vanik-one-project",
+    "storage_bucket": "vanik-one-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706923099136:android:e24d48935038afe81d94e5",
+        "android_client_info": {
+          "package_name": "ru.cthuttdbx05.moneyproject_kwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706923099136-1itdlv6rnvmcpj32l69euda7i0gchbn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjyVonr7E9UwXTJrnfI4lQZicxcl2N2vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706923099136-1itdlv6rnvmcpj32l69euda7i0gchbn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

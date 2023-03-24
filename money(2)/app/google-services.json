@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91808886727",
+    "project_id": "ckicker-ads",
+    "storage_bucket": "ckicker-ads.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91808886727:android:2c9f47eb32c973df71f3e2",
+        "android_client_info": {
+          "package_name": "ru.lfyblf_cfif31.moneyproject_kwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91808886727-4qbr7m3jcghb4bf9askoj5lg0dt9q49n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBydBoEJk3GZiqR0LIqkpk1NyqmftJ0378"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91808886727-4qbr7m3jcghb4bf9askoj5lg0dt9q49n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

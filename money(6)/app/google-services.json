@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "947642297630",
+    "firebase_url": "https://arseniy-one-project-default-rtdb.firebaseio.com",
+    "project_id": "arseniy-one-project",
+    "storage_bucket": "arseniy-one-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947642297630:android:6b67cd22f614b0f36ded0f",
+        "android_client_info": {
+          "package_name": "ru.money_ads.moneyproject_kwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947642297630-vkl4psshc4aasn44jlgutfvdpd2096m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYP9gKntjd14InxSv72MEYHYlwdI8Im4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947642297630-vkl4psshc4aasn44jlgutfvdpd2096m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

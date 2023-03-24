@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "321478021014",
+    "firebase_url": "https://arseniy-two-project-default-rtdb.firebaseio.com",
+    "project_id": "arseniy-two-project",
+    "storage_bucket": "arseniy-two-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321478021014:android:be6e16829711c4acb597b7",
+        "android_client_info": {
+          "package_name": "ru.arseniy_two_project.moneyproject_kwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321478021014-t9ie793208b3mahj6ham86ar3ejq4gjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCON1naHnQrJjei4B209IbJ59oHvItrBqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321478021014-t9ie793208b3mahj6ham86ar3ejq4gjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

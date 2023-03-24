@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "667247338019",
+    "project_id": "watch-ads-project-kwork",
+    "storage_bucket": "watch-ads-project-kwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667247338019:android:d97dd1f83467886b548796",
+        "android_client_info": {
+          "package_name": "ru.lfybkf19.moneyproject_kwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667247338019-ktu1sgos2uminmjmg8sacujrce30797h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKO47eSqAGFp309Via3MIil4R32FRg7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667247338019-ktu1sgos2uminmjmg8sacujrce30797h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
