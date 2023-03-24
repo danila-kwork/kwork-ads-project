@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "960490652616",
+    "project_id": "movie-quiz-d9fca",
+    "storage_bucket": "movie-quiz-d9fca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960490652616:android:6edfb25d61fe40f93df6fd",
+        "android_client_info": {
+          "package_name": "ru.movie.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960490652616-n8mppc7fap1m7c6nq2c9bvvctggpkmm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNldex_MrHsdT35qM6f0hLsEB14aY1ivY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960490652616-n8mppc7fap1m7c6nq2c9bvvctggpkmm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

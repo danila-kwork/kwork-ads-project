@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/rouletteGreen</color>
+    <color name="colorPrimaryDark">@color/rouletteBlack</color>
+    <color name="colorAccent">@color/rouletteGreen</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--Roulette colours-->
+    <color name="rouletteRed">#5C040C</color>
+    <color name="rouletteBlack">#010000</color>
+    <color name="rouletteGreen">#114200</color>
+    <color name="rouletteGold">#E0BF5F</color>
+    <color name="rouletteDarkGold">#816A41</color>
+    <color name="rouletteSilver">#E3D5D0</color>
+    <color name="rouletteWhite">#BCB6B8</color>
+    <color name="rouletteBrightRed">#CCFE2803</color>
+
+    <!--Random Dragon colours-->
+    <color name="dragonRed">#7F2926</color>
+    <color name="dragonBlue">#261B5B</color>
+</resources>
