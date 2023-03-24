@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Занимательная арифметика</string>
+    <string name="support">Поддержка</string>
+    <string name="reward">Награда</string>
+    <string name="check">Проверить</string>
+    <string name="hint">Подсказка</string>
+
+    <string name="points">Баллы %1$s</string>
+    <string name="answer">Ответ</string>
+    <string name="problem">Пример</string>
+    <string name="smth_went_wrong">Something went wrong</string>
+    <string name="not_a_number">Введено не число</string>
+    <string name="next">Дальше</string>
+    <string name="qiwi_number">Номер Qiwi кошелька</string>
+    <string name="amount">Количество баллов</string>
+    <string name="withdraw">Вывести</string>
+    <string name="wrong_input">Неправильный ввод</string>
+    <string name="reward_unavailable">Для получения награды необходимо как минимум 10 баллов</string>
+    <string name="withdrawal_error">Возникла ошибка</string>
+    <string name="withdraw_success">Успешно выведено</string>
+</resources>

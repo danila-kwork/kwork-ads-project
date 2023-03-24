@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hint_and_check_width">208dp</dimen>
+</resources>
