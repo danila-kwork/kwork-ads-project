@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "12008159822",
+    "firebase_url": "https://russian-language-quiz-a2361-default-rtdb.firebaseio.com",
+    "project_id": "russian-language-quiz-a2361",
+    "storage_bucket": "russian-language-quiz-a2361.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12008159822:android:ac0c6fa41b2be8c07da11f",
+        "android_client_info": {
+          "package_name": "ru.russian_language"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12008159822-e69a20dtf517h08o06pf24dnhrganone.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOpIP2wXc6bHDr-SB-cqYCXEih2Wz4Zcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12008159822-e69a20dtf517h08o06pf24dnhrganone.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
