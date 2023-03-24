@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "440219171971",
+    "project_id": "ads-project-kwork",
+    "storage_bucket": "ads-project-kwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440219171971:android:723188e01651ae5ad6efb6",
+        "android_client_info": {
+          "package_name": "ru.pgk63_samara.ads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440219171971-1e1n75t08ulhlm31m566oh9e5tuerk4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI0rf9ZhDYYE3f8bfudZiAorUjPcBG2OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440219171971-1e1n75t08ulhlm31m566oh9e5tuerk4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

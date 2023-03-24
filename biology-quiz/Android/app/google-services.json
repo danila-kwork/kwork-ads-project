@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46216369102",
+    "firebase_url": "https://biology-quiz-f17bc-default-rtdb.firebaseio.com",
+    "project_id": "biology-quiz-f17bc",
+    "storage_bucket": "biology-quiz-f17bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46216369102:android:28a415d5ff47d5ce84119f",
+        "android_client_info": {
+          "package_name": "ru.biology_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46216369102-9a8qracps2b9pvv9rvl7jr5sq4j6cbe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg8gcfGtxCMFT5uljPhdVA980clkkBFu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46216369102-9a8qracps2b9pvv9rvl7jr5sq4j6cbe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
