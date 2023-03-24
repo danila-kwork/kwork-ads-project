@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "733535164792",
+    "firebase_url": "https://sergei-ten-project-kwork-default-rtdb.firebaseio.com",
+    "project_id": "sergei-ten-project-kwork",
+    "storage_bucket": "sergei-ten-project-kwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733535164792:android:93b6ca8d09308e57e8108d",
+        "android_client_info": {
+          "package_name": "ru.firstproject.films"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733535164792-no3p8q6cv2jj35rd5a440pvtn8kpds2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_BqJ_OEvfUNtND9um_IPmIsnK1CxN9_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733535164792-no3p8q6cv2jj35rd5a440pvtn8kpds2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733535164792:android:265e8432b200c6bce8108d",
+        "android_client_info": {
+          "package_name": "ru.secondproject.squarenumber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733535164792-no3p8q6cv2jj35rd5a440pvtn8kpds2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_BqJ_OEvfUNtND9um_IPmIsnK1CxN9_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733535164792-no3p8q6cv2jj35rd5a440pvtn8kpds2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

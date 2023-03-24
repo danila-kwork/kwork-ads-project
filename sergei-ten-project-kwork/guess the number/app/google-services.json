@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "509742712366",
+    "project_id": "guess-the-number-33eb3",
+    "storage_bucket": "guess-the-number-33eb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509742712366:android:4a673e4b7d53a1879981bf",
+        "android_client_info": {
+          "package_name": "ru.fourthproject.guessthenumber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509742712366-1a10gkm8fb91q11v4v49frhbfqup78r5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.fourthproject.guessthenumber",
+            "certificate_hash": "878184fd93763906bcefae865b583a1028a47cb4"
+          }
+        },
+        {
+          "client_id": "509742712366-lnmt8ptdvsjatf608t9ts9k33e51olsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.fourthproject.guessthenumber",
+            "certificate_hash": "ffc5c8f100f0177561ec7b8801d8c1ea06e9853e"
+          }
+        },
+        {
+          "client_id": "509742712366-aha55760n04cbvgb79lrgt8o92ip3mrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGSLB9PkIvBoY8OjqFo2-r-haXFyvKkAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509742712366-aha55760n04cbvgb79lrgt8o92ip3mrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
