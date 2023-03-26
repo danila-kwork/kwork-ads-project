@@ -17,6 +17,7 @@ import com.google.firebase.ktx.Firebase
 import com.example.notes.navigation.Screen
 import com.example.notes.ui.screens.authScreen.AuthScreen
 import com.example.notes.ui.screens.mainScreen.MainScreen
+import com.example.notes.ui.screens.settingsScreen.SettingsScreen
 import com.example.notes.ui.screens.withdrawalRequestsScreen.WithdrawalRequestsScreen
 import com.example.notes.ui.theme.primaryBackground
 
@@ -48,6 +49,9 @@ class MainActivity : ComponentActivity() {
                             }
                             composable(Screen.WithdrawalRequests.route){
                                 WithdrawalRequestsScreen()
+                            }
+                            composable(Screen.Settings.route){
+                                SettingsScreen()
                             }
                         }
                     )

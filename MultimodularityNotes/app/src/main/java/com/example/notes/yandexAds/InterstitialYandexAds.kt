@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.example.notes.data.firebase.utils.UtilsDataStore
 import com.yandex.mobile.ads.common.AdRequest
 import com.yandex.mobile.ads.common.AdRequestError
 import com.yandex.mobile.ads.common.ImpressionData
@@ -23,8 +24,13 @@ class InterstitialYandexAds(
 
     private var adClickedDate: LocalDateTime? = null
     private var returnedToDate: LocalDateTime? = null
+    private val utilsDataStore = UtilsDataStore()
 
-    init { configureRewardedAd() }
+    init {
+        utilsDataStore.get(onSuccess = {
+            configureRewardedAd(it.interstitial_yandex_ads_id.ifEmpty { AD_UNIT_ID })
+        })
+    }
 
     private companion object {
         const val AD_UNIT_ID = "R-M-2270271-2"
@@ -39,8 +45,8 @@ class InterstitialYandexAds(
 
     private fun loadRewardedAd() = interstitialAds?.loadAd(AdRequest.Builder().build())
 
-    private fun configureRewardedAd() {
-        interstitialAds?.setAdUnitId(AD_UNIT_ID)
+    private fun configureRewardedAd(id: String) {
+        interstitialAds?.setAdUnitId(id)
         interstitialAds?.setInterstitialAdEventListener(this)
     }
 

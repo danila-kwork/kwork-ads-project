@@ -32,6 +32,8 @@ import com.example.notes.R
 import com.example.notes.data.firebase.user.model.UserRole
 import com.example.notes.data.firebase.user.model.createUserLoading
 import com.example.notes.data.firebase.user.model.userSumMoney
+import com.example.notes.data.firebase.utils.UtilsDataStore
+import com.example.notes.data.firebase.utils.model.Utils
 import com.example.notes.data.firebase.withdrawalRequest.model.WithdrawalRequest
 import com.example.notes.data.firebase.words.model.createWordLoading
 import com.example.notes.navigation.Screen
@@ -41,6 +43,7 @@ import com.example.notes.ui.view.SchoolBoard
 import com.example.notes.ui.view.YandexAdsBanner
 import com.example.notes.yandexAds.InterstitialYandexAds
 import com.example.notes.yandexAds.RewardedYandexAds
+import com.yandex.mobile.ads.banner.AdSize
 import java.time.Duration
 
 @SuppressLint("NewApi")
@@ -67,6 +70,9 @@ fun MainScreen(
 
     var watchAdsClickButtonVisible by remember { mutableStateOf(true) }
     var watchAdsClick by remember { mutableStateOf(false) }
+
+    var utils by remember { mutableStateOf<Utils?>(null) }
+    val utilsDataStore = remember(::UtilsDataStore)
 
     val timer = object: CountDownTimer(7000, 1000) {
         override fun onTick(millisUntilFinished: Long) = Unit
@@ -121,6 +127,9 @@ fun MainScreen(
     LaunchedEffect(key1 = Unit, block = {
         viewModel.getRandom(onSuccess = { word = it })
         viewModel.getUser { user = it }
+        utilsDataStore.get(onSuccess = {
+            utils = it
+        })
     })
 
     LaunchedEffect(key1 = yandexAdsCount, block = {
@@ -132,6 +141,7 @@ fun MainScreen(
 
     if(rewardAlertDialog){
         RewardAlertDialog(
+            utils = utils,
             countAds = user.countAds,
             countAnswers = user.countAnswers,
             countAdsClick = user.countAdsClick,
@@ -191,7 +201,7 @@ fun MainScreen(
             )
 
             SchoolBoard(
-                text = "Балланс ${userSumMoney(user.countAds, user.countAnswers, user.countAdsClick, user.countClickWatchAds)}" +
+                text = "Балланс ${userSumMoney(utils,user.countAds, user.countAnswers, user.countAdsClick, user.countClickWatchAds)}" +
                         " ₽\n\nКакая буква пропущена ${word.word} ?",
                 width = (screenWidthDp / 2.0),
                 height = (screenHeightDp / 2.5)
@@ -354,7 +364,11 @@ fun MainScreen(
                 }
             }
 
-            YandexAdsBanner()
+            utils?.let {
+                YandexAdsBanner(
+                    adUnitId = it.banner_yandex_ads_id
+                )
+            }
         }
     }
 }

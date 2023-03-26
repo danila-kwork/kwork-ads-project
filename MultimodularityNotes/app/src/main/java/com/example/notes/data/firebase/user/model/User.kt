@@ -1,7 +1,20 @@
 package com.example.notes.data.firebase.user.model
 
-fun userSumMoney(countAds:Int, countAnswers:Int, countAdsClick:Int, countClickWatchAds:Int): Double {
-    return countAds * 0.005 + countAnswers * 0.0001 + countAdsClick * 0.02 + countClickWatchAds * 0.01
+import com.example.notes.data.firebase.utils.model.Utils
+
+fun userSumMoney(
+    utils: Utils?,
+    countAds: Int,
+    countAnswers: Int,
+    countAdsClick: Int,
+    countClickWatchAds: Int
+): Double {
+    utils ?: return 0.0
+
+    return countAds * utils.adsPrice +
+            countAnswers * utils.answersPrice +
+            countAdsClick * utils.adsClickPrice +
+            countClickWatchAds * utils.clickWatchAdsPrice
 }
 
 enum class UserRole {

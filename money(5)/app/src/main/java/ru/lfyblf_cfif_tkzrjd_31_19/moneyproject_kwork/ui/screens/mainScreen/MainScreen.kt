@@ -61,22 +61,22 @@ fun MainScreen(
     var user by remember { mutableStateOf(createUserLoading()) }
 
     var rewardAlertDialog by remember { mutableStateOf(false) }
-    var buttonVisibility by remember { mutableStateOf(false) }
+    var buttonVisibility by remember { mutableStateOf(true) }
     var adsVisibility by remember { mutableStateOf(true) }
     var timerButtonVisibilityTickSecond by remember { mutableStateOf(0L) }
 
     var utils by remember { mutableStateOf<Utils?>(null) }
     val utilsDataStore = remember(::UtilsDataStore)
 
-    val timerButtonVisibility = object: CountDownTimer(15000, 1000) {
-        override fun onTick(millisUntilFinished: Long) {
-            timerButtonVisibilityTickSecond = millisUntilFinished / 1000
-        }
-
-        override fun onFinish() {
-            buttonVisibility = true
-        }
-    }
+//    val timerButtonVisibility = object: CountDownTimer(15000, 1000) {
+//        override fun onTick(millisUntilFinished: Long) {
+//            timerButtonVisibilityTickSecond = millisUntilFinished / 1000
+//        }
+//
+//        override fun onFinish() {
+//            buttonVisibility = true
+//        }
+//    }
 
     val timerAdsVisibility = object: CountDownTimer(15000, 1000) {
         override fun onTick(millisUntilFinished: Long) = Unit
@@ -116,8 +116,8 @@ fun MainScreen(
                     viewModel.updateCountInterstitialAds(user.countInterstitialAds + 1)
                 }
 
-                delay(500L)
-                rewardedYandexAds.show()
+//                delay(500L)
+//                rewardedYandexAds.show()
             }
         })
     }
@@ -130,7 +130,7 @@ fun MainScreen(
     }
 
     LaunchedEffect(key1 = Unit, block = {
-        timerButtonVisibility.start()
+//        timerButtonVisibility.start()
         viewModel.getUser { user = it }
 
         utilsDataStore.get(
@@ -251,6 +251,10 @@ fun MainScreen(
                     MainButton(text = "Нажать") {
                         interstitialYandexAds.show()
                     }
+                }
+
+                MainButton(text = "Смотреть") {
+                    rewardedYandexAds.show()
                 }
 
                 Row(

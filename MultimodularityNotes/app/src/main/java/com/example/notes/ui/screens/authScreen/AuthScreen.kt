@@ -18,6 +18,8 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.notes.LocalNavController
 import com.example.notes.R
+import com.example.notes.data.firebase.utils.UtilsDataStore
+import com.example.notes.data.firebase.utils.model.Utils
 import com.example.notes.navigation.Screen
 import com.example.notes.ui.theme.primaryText
 import com.example.notes.ui.theme.secondaryBackground
@@ -40,6 +42,15 @@ fun AuthScreen(
     var password by remember { mutableStateOf("") }
     var error by remember { mutableStateOf("") }
 
+    var utils by remember { mutableStateOf<Utils?>(null) }
+    val utilsDataStore = remember(::UtilsDataStore)
+
+    LaunchedEffect(key1 = Unit, block = {
+        utilsDataStore.get(onSuccess = {
+            utils = it
+        })
+    })
+
     Image(
         bitmap = Bitmap.createScaledBitmap(
             BitmapFactory.decodeResource(context.resources, R.drawable.main_background),
@@ -60,13 +71,15 @@ fun AuthScreen(
         verticalArrangement = Arrangement.Center
     ) {
         item {
-            YandexAdsBanner(
-                size = AdSize.BANNER_240x400
-            )
+            utils?.let {
+                YandexAdsBanner(
+                    size = AdSize.BANNER_240x400,
+                    adUnitId = it.banner_yandex_ads_id
+                )
+            }
         }
 
         item {
-
             Text(
                 text = error,
                 color = Color.Red,

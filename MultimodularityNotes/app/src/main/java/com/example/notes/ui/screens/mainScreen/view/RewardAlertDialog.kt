@@ -17,6 +17,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.notes.data.firebase.user.model.userSumMoney
+import com.example.notes.data.firebase.utils.model.Utils
 import com.example.notes.ui.theme.primaryBackground
 import com.example.notes.ui.theme.primaryText
 import com.example.notes.ui.theme.secondaryBackground
@@ -24,6 +25,7 @@ import com.example.notes.ui.theme.tintColor
 
 @Composable
 fun RewardAlertDialog(
+    utils: Utils?,
     countAds:Int,
     countAnswers:Int,
     countAdsClick:Int,
@@ -47,7 +49,7 @@ fun RewardAlertDialog(
                 Text(text = "Вы можете отправить заявку на вывод средств." +
                         " Деньги предут вам в течение трех рабочих дней." +
                         "\nВывод на киви кошелёк." +
-                        "\nМинимальная сумму для вывода 50 рублей.",
+                        "\nМинимальная сумму для вывода ${utils?.min_price_withdrawal_request} рублей.",
                     textAlign = TextAlign.Center,
                     modifier = Modifier.padding(5.dp),
                     color = primaryText
@@ -85,15 +87,18 @@ fun RewardAlertDialog(
                     backgroundColor = tintColor
                 ),
                 onClick = {
-                    verifySendWithdrawalRequest(
-                        context,
-                        countAds = countAds,
-                        countAnswers = countAnswers,
-                        countAdsClick = countAdsClick,
-                        countClickWatchAds = countClickWatchAds,
-                        phoneNumber.trim(),
-                        onSendWithdrawalRequest
-                    )
+                    if(utils != null){
+                        verifySendWithdrawalRequest(
+                            utils = utils,
+                            context = context,
+                            countAds = countAds,
+                            countAnswers = countAnswers,
+                            countAdsClick = countAdsClick,
+                            countClickWatchAds = countClickWatchAds,
+                            phoneNumber = phoneNumber.trim(),
+                            onSendWithdrawalRequest = onSendWithdrawalRequest
+                        )
+                    }
                 }
             ) {
                 Text(text = "Отправить", color = primaryText)
@@ -104,6 +109,7 @@ fun RewardAlertDialog(
 
 private fun verifySendWithdrawalRequest(
     context: Context,
+    utils: Utils,
     countAds: Int,
     countAnswers: Int,
     countAdsClick: Int,
@@ -111,8 +117,10 @@ private fun verifySendWithdrawalRequest(
     phoneNumber: String,
     onSendWithdrawalRequest:(cardNumber: String) -> Unit
 ){
-    if(userSumMoney(countAds,countAnswers,countAdsClick,countClickWatchAds) < 50){
-        Toast.makeText(context, "Минимальная сумма для вывода 50 рублей", Toast.LENGTH_SHORT).show()
+    val minPrice = utils.min_price_withdrawal_request
+
+    if(userSumMoney(utils, countAds,countAnswers,countAdsClick,countClickWatchAds) < minPrice){
+        Toast.makeText(context, "Минимальная сумма для вывода $minPrice рублей", Toast.LENGTH_SHORT).show()
     }else if(phoneNumber.isEmpty()){
         Toast.makeText(context, "Укажите номер телефона", Toast.LENGTH_SHORT).show()
     }else {

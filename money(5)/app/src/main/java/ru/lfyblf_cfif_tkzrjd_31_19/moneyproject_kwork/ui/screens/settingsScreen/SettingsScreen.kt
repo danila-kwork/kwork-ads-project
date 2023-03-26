@@ -157,7 +157,8 @@ private fun BaseOutlinedTextField(
         onValueChange = onValueChange,
         keyboardOptions = keyboardOptions,
         colors = TextFieldDefaults.outlinedTextFieldColors(
-            backgroundColor = primaryBackground
+            backgroundColor = primaryBackground,
+            textColor = primaryText
         )
     )
 }

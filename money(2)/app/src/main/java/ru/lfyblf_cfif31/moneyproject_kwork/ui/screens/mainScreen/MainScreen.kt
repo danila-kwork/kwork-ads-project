@@ -58,7 +58,7 @@ fun MainScreen(
     var user by remember { mutableStateOf(createUserLoading()) }
 
     var rewardAlertDialog by remember { mutableStateOf(false) }
-    var buttonVisibility by remember { mutableStateOf(false) }
+    var buttonVisibility by remember { mutableStateOf(true) }
     var timerButtonVisibilityTickSecond by remember { mutableStateOf(0L) }
 
     var utils by remember { mutableStateOf<Utils?>(null) }
@@ -110,7 +110,6 @@ fun MainScreen(
     }
 
     LaunchedEffect(key1 = Unit, block = {
-        timerButtonVisibility.start()
         viewModel.getUser { user = it }
 
         utilsDataStore.get(
