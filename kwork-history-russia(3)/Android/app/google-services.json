@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60131407228",
+    "firebase_url": "https://kwork-mad-history-2-default-rtdb.firebaseio.com",
+    "project_id": "kwork-mad-history-2",
+    "storage_bucket": "kwork-mad-history-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60131407228:android:960f70026a5ac6f3d7a0f9",
+        "android_client_info": {
+          "package_name": "ru.madtwoproject3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60131407228-44cb3aal2v5ib4r7mm28u11ns4rdbi2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHM-lkP5t4csVyDhWjjfiSFr4WLwKjoXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60131407228-44cb3aal2v5ib4r7mm28u11ns4rdbi2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
