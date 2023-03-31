@@ -88,9 +88,6 @@ fun MainScreen(
             } else if(rewarded){
                 viewModel.updateCountRewardedAds(user.countRewardedAds + 1)
             }
-
-            adsVisibility = false
-            timerAdsVisibility.start()
         })
     }
 
@@ -107,8 +104,8 @@ fun MainScreen(
                     viewModel.updateCountInterstitialAds(user.countInterstitialAds + 1)
                 }
 
-                delay(500L)
-                rewardedYandexAds.show()
+                adsVisibility = false
+                timerAdsVisibility.start()
             }
         })
     }
@@ -255,6 +252,10 @@ fun MainScreen(
             ) {
 
                 Spacer(modifier = Modifier.height((screenHeightDp / 15).dp))
+
+                MainButton(text = "Смотреть") {
+                    rewardedYandexAds.show()
+                }
 
                 AnimatedVisibility(visible = adsVisibility) {
                     MainButton(text = "Нажать") {

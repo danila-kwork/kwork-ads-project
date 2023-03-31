@@ -43,6 +43,8 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 val auth = remember(Firebase::auth)
 
+                
+
                 NavHost(
                     navController = navController,
                     startDestination = if(auth.currentUser == null)
