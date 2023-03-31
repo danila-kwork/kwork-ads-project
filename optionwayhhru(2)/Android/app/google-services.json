@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037326896175",
+    "project_id": "nemuka-79e12",
+    "storage_bucket": "nemuka-79e12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037326896175:android:47aa88f6664f7a39420ada",
+        "android_client_info": {
+          "package_name": "sinelix.sportapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037326896175-dgusl6ghc82lpc597eqoge6basbkpnht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtSmuB1y3v-LfwPldmKtPzkhUN_kKa978"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037326896175-dgusl6ghc82lpc597eqoge6basbkpnht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

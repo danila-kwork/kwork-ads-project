@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767005592694",
+    "project_id": "cpgb-1f602",
+    "storage_bucket": "cpgb-1f602.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767005592694:android:050a97f1c5632b2f432357",
+        "android_client_info": {
+          "package_name": "copa.gol.bet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767005592694-5qkovi9g5o3k4u9q7os7mrobf9j7uj7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE_C9cUAGmnsJzIrrlt1BkKU5O5VJcaCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767005592694-5qkovi9g5o3k4u9q7os7mrobf9j7uj7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

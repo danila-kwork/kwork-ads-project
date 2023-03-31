@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e12e6e36-6ebe-4679-af9c-ba9eea7662fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/androidTest/java/ru/oprion_way/hh_ru/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/data/databse/UtilsDataStore.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/data/news/NewsDataStore.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/data/news/model/News.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/data/remoteConfig/RemoteConfigDataStore.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/screens/LoadingScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/screens/MainScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/screens/NoInternetConnectionScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/screens/WebViewScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/theme/Shape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/view/LottieAnimation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/ui/view/NewsCard.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/utils/ConnectionInternet.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/utils/ContextExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/java/ru/oprion_way/hh_ru/utils/Emulator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Android/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/app/src/test/java/ru/oprion_way/hh_ru/ExampleUnitTest.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2NN2f5XYAcKuOxYR5aNSQIj15Ed" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danbe/AndroidStudioProjects/hh.ru/optionwayhhru/Android&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e12e6e36-6ebe-4679-af9c-ba9eea7662fc" name="Changes" comment="" />
+      <created>1679490323890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679490323890</updated>
+    </task>
+    <servers />
+  </component>
+</project>
