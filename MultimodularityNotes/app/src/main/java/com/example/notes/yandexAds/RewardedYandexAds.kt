@@ -54,7 +54,7 @@ class RewardedYandexAds(
     override fun onAdLoaded() { rewardedAd?.show() }
 
     override fun onAdFailedToLoad(p0: AdRequestError) {
-        Log.e("onAdFailedToLoad",p0.code.toString() + p0.description)
+//        Log.e("onAdFailedToLoad",p0.code.toString() + p0.description)
     }
 
     override fun onAdShown() = Unit

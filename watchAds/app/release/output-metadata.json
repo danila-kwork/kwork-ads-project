@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "ru.tkzrjd16.watchads",
+  "applicationId": "com.lfybkf11701.watchads",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 3,
-      "versionName": "3.0",
+      "versionCode": 4,
+      "versionName": "3.1",
       "outputFile": "app-release.apk"
     }
   ],

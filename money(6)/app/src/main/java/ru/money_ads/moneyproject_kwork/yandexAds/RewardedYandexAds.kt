@@ -55,7 +55,7 @@ class RewardedYandexAds(
     override fun onAdLoaded() { rewardedAd?.show() }
 
     override fun onAdFailedToLoad(p0: AdRequestError) {
-        Toast.makeText(context, p0.code.toString() + p0.description, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(context, p0.code.toString() + p0.description, Toast.LENGTH_SHORT).show()
         Log.e("onAdFailedToLoad",p0.code.toString() + p0.description)
     }
 

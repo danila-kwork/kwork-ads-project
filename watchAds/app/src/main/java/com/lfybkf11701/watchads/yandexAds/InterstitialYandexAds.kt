@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.lfybkf11701.watchads.data.firebase.utils.UtilsDataStore
 import com.yandex.mobile.ads.common.AdRequest
 import com.yandex.mobile.ads.common.AdRequestError
 import com.yandex.mobile.ads.common.ImpressionData
@@ -16,18 +17,23 @@ class InterstitialYandexAds(
     private val onDismissed: (
         adClickedDate: LocalDateTime?,
         returnedToDate: LocalDateTime?
-    ) -> Unit = { _,_ -> }
+    ) -> Unit
 ): InterstitialAdEventListener {
 
     private var interstitialAds: InterstitialAd? = InterstitialAd(context)
 
     private var adClickedDate: LocalDateTime? = null
     private var returnedToDate: LocalDateTime? = null
+    private val utilsDataStore = UtilsDataStore()
 
-    init { configureRewardedAd() }
+    init {
+        utilsDataStore.get(onSuccess = {
+            configureRewardedAd(it.interstitial_yandex_ads_id.ifEmpty { AD_UNIT_ID })
+        })
+    }
 
     private companion object {
-        const val AD_UNIT_ID = "R-M-2267298-2"
+        const val AD_UNIT_ID = "R-M-2193940-2"
     }
 
     fun show() {
@@ -39,8 +45,8 @@ class InterstitialYandexAds(
 
     private fun loadRewardedAd() = interstitialAds?.loadAd(AdRequest.Builder().build())
 
-    private fun configureRewardedAd() {
-        interstitialAds?.setAdUnitId(AD_UNIT_ID)
+    private fun configureRewardedAd(interstitialYandexAdsId: String) {
+        interstitialAds?.setAdUnitId(interstitialYandexAdsId)
         interstitialAds?.setInterstitialAdEventListener(this)
     }
 
@@ -70,7 +76,7 @@ class InterstitialYandexAds(
         returnedToDate = LocalDateTime.now()
     }
 
-    override fun onImpression(p0: ImpressionData?) = Unit
+    override fun onImpression(p0: ImpressionData?) {}
 
     fun destroy() {
         interstitialAds?.destroy()

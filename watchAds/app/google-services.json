@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993630141630",
+    "project_id": "arseniy-07-06-23",
+    "storage_bucket": "arseniy-07-06-23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993630141630:android:0476804bc7fcebd4c732ef",
+        "android_client_info": {
+          "package_name": "com.lfybkf11701.watchads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993630141630-dlrnjfe7qnkfc3jvui7sldm11q04lckc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS4JmshKpD7xf2mk81M7sa2KLBU8wr9mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993630141630-dlrnjfe7qnkfc3jvui7sldm11q04lckc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

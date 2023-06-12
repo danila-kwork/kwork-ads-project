@@ -35,7 +35,7 @@ fun YandexAdsBanner(
                     }
 
                     override fun onAdFailedToLoad(p0: AdRequestError) {
-                        Toast.makeText(context, p0.description.toString(), Toast.LENGTH_SHORT).show()
+//                        Toast.makeText(context, p0.description.toString(), Toast.LENGTH_SHORT).show()
                     }
 
                     override fun onAdClicked() {

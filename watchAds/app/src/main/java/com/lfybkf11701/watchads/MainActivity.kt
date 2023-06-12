@@ -3,31 +3,59 @@ package com.lfybkf11701.watchads
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.Text
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.lfybkf11701.watchads.ui.screens.MainScreen
+import com.lfybkf11701.watchads.ui.screens.authScreen.AuthScreen
 import com.lfybkf11701.watchads.ui.theme.WatchAdsTheme
-import com.lfybkf11701.watchads.ui.view.YandexAdsBanner
+import ru.andrey_one_project.moneyproject_kwork.ui.screens.settingsScreen.SettingsScreen
+import com.lfybkf11701.watchads.ui.screens.withdrawalRequestsScreen.WithdrawalRequestsScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             WatchAdsTheme {
-                MainScreen()
 
+                val navHostController = rememberNavController()
+
+                val startDestination = if(Firebase.auth.currentUser == null)
+                    "Auth"
+                else
+                    "Main"
+
+                NavHost(
+                    navController = navHostController,
+                    startDestination = startDestination,
+                    builder = {
+                        composable("Main"){
+                            MainScreen(
+                                navController = navHostController
+                            )
+                        }
+
+                        composable("Auth"){
+                            AuthScreen(
+                                navController = navHostController
+                            )
+                        }
+
+                        composable("WithdrawalRequests"){
+                            WithdrawalRequestsScreen(
+                                navController = navHostController
+                            )
+                        }
+
+                        composable("Settings"){
+                            SettingsScreen(
+                                navController = navHostController
+                            )
+                        }
+                    }
+                )
 //                val count = remember { mutableStateOf(0) }
 //
 //                Column(
